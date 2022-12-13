@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cc69e60615.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'inscripcion.jpg' %}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Russo+One&display=swap" rel="stylesheet">
+        <title>INSCRIPCIÓN</title>
+    </head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'logo.jpg' %}" alt="LOGO">
+        <nav>
+            <div id="links" class="barra">
+            </div>
+        <h1>FORMULARIO DE INSCRIPCIÓN</h1>
+    </nav>          
+    </header>    
+    <main>
+        <form action="./IMAGENES/show_data.html">
+            <div class="formulario">
+            <label for="apellido">APELLIDO</label>
+            <input type="text" name="apellido" id="apellido" required="value">
+            <br><br>
+            <label for="nombre">NOMBRE</label>
+            <input type="text" name="nombre" id="nombre" required="value">
+            <br><br>
+            <label for="numerodocumento">N° DOCUMENTO</label>
+            <input type="number" name="numerodocumento" id="numerodocumento">
+            <br><br>
+            <label for="fechanacimiento">FECHA DE NACIMIENTO</label>
+            <input type="date" name="fechanacimiento" id="fechanacimiento">
+            <br><br>
+            <label for="genero">GÉNERO</label>
+            <input type="radio" name="genero" value="Masculino">Masculino
+            <input type="radio" name="genero" value="Femenino">Femenino
+            <input type="radio" name="genero" value="Otro">Otro
+            <br><br>
+            </select>
+            <label for="numerotelefono">N° TELÉFONO</label>
+            <input type="tel" required="value">
+            <br><br>
+            <label for="direccionmail">DIRECCIÓN DE EMAIL</label>
+            <input type="email" required="value">
+            <br><br>
+            <label for="curso">CURSO</label>
+            <select name="curso">
+                <option>Albañilería</option>
+                <option>Carpintería</option>
+                <option>Electricidad</option>
+                <option>Mecánica Automotríz</option>
+                <option>Pintura</option>
+                <option>Plomería y Gas</option>
+            </select>
+            <br><br>
+            <label for="sede">SEDE</label>
+            <input type="radio" name="sede" value="C.A.B.A - Boedo">C.A.B.A - Boedo
+            <input type="radio" name="sede" value="CÓRDOBA - General Bustos">CÓRDOBA - General Bustos
+            <input type="radio" name="sede" value="TIERRA DEL FUEGO - Ushuaia">TIERRA DEL FUEGO - Ushuaia
+            <br><br>
+            <input type="submit" value="ENVIAR FORMULARIO">
+            <input type="reset" value="RESTAURAR FORMULARIO">
+            </div>
+        </form>
+        <!--<form action="{% url "contacto" %}" method="post">
+            {% csrf_token %}
+            {{ inscripcion_form }}
+            <input type="submit" value="Enviar inscripción"
+        </form>-->
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

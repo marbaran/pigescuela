@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% extends "base.html" %}
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cc69e60615.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'contacto.jpg' %}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Russo+One&display=swap" rel="stylesheet">
+        <title>
+            {% block titulo %}
+                CONTACTO
+            {% endblock titulo %}
+        </title>
+    </head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'logo.jpg' %}" alt="LOGO">  
+        <nav>
+            <div id="links" class="barra">
+            </div>
+        <h1>CONTÁCTESE CON NOSOTROS</h1>
+    </nav>          
+    </header>    
+    <main>
+        {% block contenido %}
+        <!--<div class="contacto">
+            <p>Para contactarse con nosotros por favor escríbanos a:</p>
+            <a href="mailto:informes@escuelaoficios21.com.ar">informes@escuelaoficios21.com.ar</a>
+            <p>O bien envíenos su mensaje</p><br>
+            <form name="contacto" form action="./IMAGENES/show_data.html"onsubmit="return validarcontacto()" method="post"> 
+                <label for="nombre">NOMBRE</label>
+                <input type="text" name="nombre" id="nombre"><br>
+                <br>
+                <label for="apellido">APELLIDO</label>
+                <input type="text" name="apellido" id="apellido"><br>
+                <br>
+                <label for="nombre">email:</label>
+                <input type="email" name="email" id="email"><br>
+                <br>
+                <textarea name="texto" id="mensaje" cols="40" rows="12" placeholder="Escriba su mensaje aqui..."></textarea>
+                <br>
+                <input type="submit" value="ENVIAR" id="enviarmen">
+            </form>
+            </div>-->
+            <div>
+                <form action="{% url "contacto" %}" method="post">
+                    {% csrf_token %}
+                    <table>
+                        {{ contacto_form.as_table }}
+                    </table>    
+                    <input type="submit" value="Contactar"
+                </form>
+            </div>            
+        {% endblock contenido %}
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
+

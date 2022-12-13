@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cc69e60615.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'cursos.jpg' %}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Russo+One&display=swap" rel="stylesheet">
+        <title>CURSOS</title>
+    </head>
+<body>
+    <header>
+        <img id="logo" src="{% static 'logo.jpg' %}" alt="LOGO"> 
+        <nav>
+            <div id="links" class="barra">
+            </div>
+        <h1>NUESTROS CURSOS 2022</h1>
+    </nav>          
+    </header> 
+    <main>   
+        <div class="grid-container1">
+            <div>
+                <img src="{% static 'albañil.jpg' %}" alt="ALBAÑIL" height="175px">
+                <p>ALBAÑIL</p>
+            </div>
+            <div id="carpintero">    
+                <img src="{% static 'carpintero.jpg' %}" alt="CARPINTERO" height="175px">
+                <p>CARPINTERO</p>
+            </div>
+            <div>
+                <img src="{% static 'electricista matriculado.jpg' %}" alt="ELECTRICISTA MATRICULADO" height="175px">
+                <p>ELECTRICISTA MATRICULADO</p>
+            </div>
+            <div>
+                <img src="{% static 'mecánico automotríz.jpg' %}" alt="MECÁNICO AUTOMOTRÍZ" height="175px">
+                <p>MECÁNICO AUTOMOTRÍZ</p>
+            </div>
+            <div>
+                <img src="{% static 'pintor.jpg' %}" alt="PINTOR" height="175px">
+                <p>PINTOR</p>
+            </div>
+            <div>
+                <img src="{% static 'plomero y gasista matriculado.jpg' %}" alt="PLOMERO Y GASISTA MATRICULADO" height="175px">
+                <p>PLOMERO Y GASISTA MATRICULADO</p>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

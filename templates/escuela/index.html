@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cc69e60615.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'escuela.jpg' %}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Russo+One&display=swap" rel="stylesheet">
+        <title>ESCUELA DE OFICIOS</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="{% static 'logo.jpg' %}" alt="LOGO">  
+            <nav>
+                <div id="links" class="barra">
+                </div>
+            <h1>ESCUELA DE OFICIOS ARGENTINA SIGLO 21</h1>
+        </nav>          
+        </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item1">
+                <h2>CURSOS 2022</h2>
+                <ul>
+                    <li>Albañilería</li>
+                    <li>Carpintería</li>
+                    <li>Electricidad</li>
+                    <li>Mecánica Automotríz</li>
+                    <li>Pintura</li>
+                    <li>Plomería y Gas</li>
+                </ul>
+            </div>
+            <div class="grid-item2">
+                <div id="oficios">
+                    <img src="{% static 'oficios.jpg' %}" alt="OFICIOS" height="320px"> 
+                </div>
+            </div>    
+            <div class="grid-item3">
+                <h2>NUESTRAS SEDES Y DIRECTIVOS</h2>
+                <table>
+                    <tr>
+                        <th>SEDE</th>
+                        <th>CIUDAD</th>
+                        <th>DIRECTOR/A</th>
+                    </tr>
+                    <tr>
+                        <td>Ciudad Autónoma de Buenos Aires</td>
+                        <td>Boedo</td>
+                        <td>Karin Calvet</td>
+                    </tr>
+                    <tr>
+                        <td>Provincia de Córdoba</td>
+                        <td>General Bustos</td>
+                        <td>Lara Evelyn Baranowski Calvet</td>
+                    </tr>
+                    <tr>
+                        <td>Provincia de Tierra del Fuego</td>
+                        <td>Ushuaia</td>
+                        <td>Marcelo Baranowski</td>
+                    </tr>    
+                </table>
+            </div>
+            <div class="grid-item4">
+                <h2>NUESTRO COMPROMISO</h2>        
+                <p class="compromiso">Brindar una capacitación de excelencia en un ámbito confortable y con la mejor tecnología instalada del país</p>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

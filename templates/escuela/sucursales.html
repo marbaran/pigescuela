@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/cc69e60615.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="{% static 'sucursales.jpg' %}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&family=Russo+One&display=swap" rel="stylesheet">
+        <title>SUCURSALES</title>
+    </head>
+<body class="body">
+    <header>
+        <img id="logo" src="{% static 'logo.jpg' %}" alt="LOGO">
+        <nav>
+            <div id="links" class="barra">
+            </div>
+        <h1>NUESTRAS SUCURSALES</h1>
+    </nav>          
+    </header>
+    <main>
+        <div class="sucursales">
+            <div class="col-4left" id="mapa">
+                <p>CASA MATRIZ - C.A.B.A.</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13131.847578003752!2d-58.42789677243551!3d-34.630403231031586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba995405047%3A0x39601bb2d0a0ef8f!2sBoedo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1647713141249!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-4center">    
+                <p>PROVINCIA DE CÓRDOBA</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13623.428764219492!2d-64.17704957424608!3d-31.390501035443247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298144bb8a371%3A0x7a05ee50b6aa01d4!2sGral.%20Bustos%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1647713715081!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-4right">        
+                <P>PROVINCIA DE TIERRA DEL FUEGO</P><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18395.81749871878!2d-68.32031346521993!3d-54.806731055009884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c22b5bad109bf%3A0x5498473dba43ebfc!2sUshuaia%2C%20Tierra%20del%20Fuego!5e0!3m2!1ses-419!2sar!4v1647713826849!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>    
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</body>
+</html>
